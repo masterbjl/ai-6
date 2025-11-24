@@ -45,7 +45,7 @@ if "last_prediction" not in st.session_state:
 # ======================
 # 모델 로드
 # ======================
-FILE_ID = st.secrets.get("1uS_5MySO6kiMiO7cCYf20_8Rfpe0gBhJ")
+FILE_ID = st.secrets.get("1cdbz-r9kshjyDwG8fujdaDUpwc_RObq7")
 MODEL_PATH = st.secrets.get("MODEL_PATH", "model.pkl")
 
 @st.cache_resource
