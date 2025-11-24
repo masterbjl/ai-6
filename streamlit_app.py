@@ -45,7 +45,7 @@ if "last_prediction" not in st.session_state:
 # ======================
 # 모델 로드
 # ======================
-FILE_ID = st.secrets.get("GDRIVE_FILE_ID", "1uj2lD8goJDLo9uSg_8HcT4bxnl2trPc8")
+FILE_ID = st.secrets.get("1uS_5MySO6kiMiO7cCYf20_8Rfpe0gBhJ")
 MODEL_PATH = st.secrets.get("MODEL_PATH", "model.pkl")
 
 @st.cache_resource
@@ -74,6 +74,11 @@ CONTENT_BY_LABEL: dict[str, dict[str, list[str]]] = {
     #   "images": ["https://.../jjampong1.jpg", "https://.../jjampong2.jpg"],
     #   "videos": ["https://youtu.be/XXXXXXXXXXX"]
     # },
+    labels[0] : {"text" : ["중국식 냉면은 맛있어"], "images" : ["https://www.unileverfoodsolutions.co.kr/dam/global-ufs/mcos/south-korea/calcmenu/recipes/kr-recipes/chinese/header/%EC%A4%91%EA%B5%AD%EB%83%89%EB%A9%B4-chinese-cold-noodles-header-1260x709px.jpg"]},
+    labels[1] : {"text" : ["짜장면은 맛있어"], "images" : ["https://img-cf.kurly.com/hdims/resize/%3E720x/quality/90/src/shop/data/goodsview/20230628/gv00000707399_1.jpg"]},
+    labels[2] : {"text" : ["짬뽕은 맛있어"], "images" : ["https://blog.kakaocdn.net/dna/YPxRW/btrzhpNljHH/AAAAAAAAAAAAAAAAAAAAAAhVpctCZeeRfUJSzJ9VBLKsQHsA38Gk5_KTV934P7vk/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1764514799&allow_ip=&allow_referer=&signature=KtGzPuSD0MLN59%2BpAsKcHnaNZ0U%3D"]},
+    labels[] : {"text" : ["탕수은 맛있어"], "images" : ["https://blog.kakaocdn.net/dna/qnIz2/btqSdtiK7C4/AAAAAAAAAAAAAAAAAAAAAK_eDgChgNlbA3DwDL3Rhp3zyE68j5YgxkTq4Zz6RRN5/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1764514799&allow_ip=&allow_referer=&signature=IgQS1EsJodJN9xYMyJB6awE7Ae8%3D"]},
+
 }
 
 # ======================
